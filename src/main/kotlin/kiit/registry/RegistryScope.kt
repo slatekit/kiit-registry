@@ -184,7 +184,7 @@ class RegistryScope(val registry: Registry, val module: String = "") {
      * @param op builds the `@Api` instance; receives its [ResourceId].
      */
     inline fun <reified T> api(parent:String, name:String, version: String, noinline op:(ResourceId) -> T) {
-        registry.bind("", ResourceKind.Service, "api", name, T::class, parent, version, singleton = true, module = module, op = op)
+        registry.bind("", ResourceKind.App, "api", name, T::class, parent, version, singleton = true, module = module, op = op)
     }
 
     /**
