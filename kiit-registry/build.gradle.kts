@@ -38,9 +38,9 @@ mavenPublishing {
         }
         developers {
             developer {
-                id.set("kishore")
-                name.set("Kishore")
-                email.set("kishore.pr4@gmail.com")
+                id.set("author")
+                name.set("author")
+                email.set("author")
                 organization.set("CodeHelix")
             }
         }
