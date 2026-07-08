@@ -1,6 +1,5 @@
 package kiit.registry
 
-import sample.Entity
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
@@ -11,6 +10,11 @@ import kotlin.test.assertSame
 import kotlin.test.assertTrue
 
 class RegistryTest {
+
+    private interface Entity<TId : Comparable<TId>> {
+        fun identity(): TId
+        fun isPersisted(): Boolean
+    }
 
     private data class FakeWidget(val id: Long = 0, val name: String = "") : Entity<Long> {
         override fun identity(): Long = id

@@ -1,5 +1,6 @@
 [versions]
 kotlin = "1.9.25"
+vanniktech-publish = "0.33.0"
 #kiit = "3.4.0"
 
 [libraries]
@@ -7,3 +8,4 @@ kotlin = "1.9.25"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+vanniktech-publish = { id = "com.vanniktech.maven.publish", version.ref = "vanniktech-publish" }

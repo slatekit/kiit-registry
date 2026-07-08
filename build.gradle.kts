@@ -1,27 +1,5 @@
+// Root aggregator — no dependencies of its own.
+// The library lives in :kiit-registry, demo apps live under :samples.
 plugins {
-    alias(libs.plugins.kotlin.jvm)
-    application
+    alias(libs.plugins.kotlin.jvm) apply false
 }
-
-group = "dev.kiit"
-version = "0.1.0-SNAPSHOT"
-
-kotlin {
-    jvmToolchain(21)
-}
-
-application {
-    mainClass = "sample.SampleAppKt"
-}
-
-dependencies {
-    //implementation(libs.kiit.entities)
-
-    testImplementation(kotlin("test"))
-}
-
-// Todo: Publish to maven central
-tasks.test {
-    useJUnitPlatform()
-}
-

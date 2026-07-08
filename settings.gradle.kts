@@ -24,3 +24,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kiit-registry"
+
+include(":kiit-registry")
+include(":samples:sample1")
