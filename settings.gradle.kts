@@ -23,4 +23,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "kiit-ace"
+rootProject.name = "kiit-registry"

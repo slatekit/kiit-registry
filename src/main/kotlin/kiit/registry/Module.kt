@@ -1,7 +1,7 @@
 package kiit.registry
 
 interface Module {
-    /** The semantic name ACE indexes this module under, e.g. "shared", "spaces" — not the `ModuleN_` loading-order prefix. */
+    /** The semantic name registry indexes this module under, e.g. "shared", "spaces" — not the `ModuleN_` loading-order prefix. */
     val name: String
     val registry: Registry
 

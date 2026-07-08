@@ -1,6 +1,6 @@
 package sample
 
-/** A minimal in-memory repo, just for this sample — kiit-ace itself has no opinion on persistence. */
+/** A minimal in-memory repo, just for this sample — kiit-registry itself has no opinion on persistence. */
 class InMemoryRepo<T> {
     private val items = mutableMapOf<Long, T>()
     private var nextId = 0L
