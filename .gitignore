@@ -3,14 +3,16 @@
 *.iml
 *.jar
 *.DS_Store
-
-# planning
 *.zip
-ace_pack/
 
-# test/
+
+# temp
+.cache
+.history
 
 # misc
 .gradle/
 .idea/
 build/
+.lib/
+dist/*
