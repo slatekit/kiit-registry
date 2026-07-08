@@ -1,6 +1,6 @@
 package kiit.registry
 
-import kiit.entities.Entity
+import sample.Entity
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith

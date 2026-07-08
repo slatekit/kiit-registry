@@ -1,6 +1,5 @@
 package sample
 
-import kiit.entities.Entity
 
 data class Author(
     val id: Long = 0,
@@ -13,4 +12,11 @@ data class Author(
     companion object {
         fun create(): Author = Author()
     }
+}
+
+
+interface Entity<TId: Comparable<TId>> {
+    fun identity(): TId
+
+    fun isPersisted(): Boolean
 }

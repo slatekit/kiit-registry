@@ -1,6 +1,5 @@
 package kiit.registry
 
-import kiit.entities.Entity
 import java.io.File
 import kotlin.reflect.KClass
 
@@ -147,7 +146,7 @@ class RegistryScope(val registry: Registry, val module: String = "") {
      * @param table the table name.
      * @param op builds a default/blank instance of the entity; receives its [ResourceId].
      */
-    inline fun <reified T: Entity<Long>> entity(company:String, schema:String, table:String, noinline op: (ResourceId) -> T) {
+    inline fun <reified T> entity(company:String, schema:String, table:String, noinline op: (ResourceId) -> T) {
         registry.bind(company, ResourceKind.Data, "entity", table, T::class, schema, "", singleton = true, module = module, op = op)
     }
 

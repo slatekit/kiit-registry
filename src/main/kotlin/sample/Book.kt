@@ -1,6 +1,5 @@
 package sample
 
-import kiit.entities.Entity
 
 data class Book(
     val id: Long = 0,
