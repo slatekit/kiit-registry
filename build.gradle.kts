@@ -15,7 +15,7 @@ application {
 }
 
 dependencies {
-    implementation(libs.kiit.entities)
+    //implementation(libs.kiit.entities)
 
     testImplementation(kotlin("test"))
 }
