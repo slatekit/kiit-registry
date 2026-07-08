@@ -1,9 +1,9 @@
 [versions]
 kotlin = "1.9.25"
-kiit = "3.4.0"
+#kiit = "3.4.0"
 
 [libraries]
-kiit-entities = { module = "dev.kiit:kiit-entities", version.ref = "kiit" }
+#kiit-entities = { module = "dev.kiit:kiit-entities", version.ref = "kiit" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

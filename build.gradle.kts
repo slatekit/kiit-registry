@@ -20,6 +20,7 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+// Todo: Publish to maven central
 tasks.test {
     useJUnitPlatform()
 }
